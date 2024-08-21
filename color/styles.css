@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(Gradient_builder_2.avif);
+    gap: 10px;
+  }
+  .card {
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px black;
+    transition: 0.5s;
+  }
+  .card img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+  }
+  .card:not(:hover) {
+    filter: grayscale(100%);
+  }
+  .card:hover {
+    transform: scale(1.07);
+  }
